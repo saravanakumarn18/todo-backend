@@ -10,7 +10,7 @@ connection();
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://todo-hfjf.onrender.com",
     methods: ["GET", "PUT", "POST", "DELETE"]
 }));
 
