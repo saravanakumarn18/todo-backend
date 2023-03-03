@@ -9,10 +9,10 @@ connection();
 // app.use(cors());
 
 app.use(express.json());
-// app.use(cors({
-//     // origin: "http://localhost:3000",
-//     methods: ["GET", "PUT", "POST", "DELETE"]
-// }));
+app.use(cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "PUT", "POST", "DELETE"]
+}));
 
 app.use("/api/tasks", tasks);
 
